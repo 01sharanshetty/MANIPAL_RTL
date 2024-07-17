@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jul 17 15:18:32 2024
+# Process ID: 3308
+# Current directory: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/synth
+# Command line: vivado
+# Log file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/synth/vivado.log
+# Journal file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/synth/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/synth/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/synth/project_1/timer_led_behav.wcfg
+source tb_top_timer_led.tcl
+run 10 ps
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1

@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/rtl/led_cntrl.sv,1721209125,systemVerilog,,/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/rtl/timer.sv,,led_cntrl,,uvm,,,,,,
+/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/rtl/timer.sv,1721209125,systemVerilog,,/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/rtl/top_timer_led.sv,,timer,,uvm,,,,,,
+/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/rtl/top_timer_led.sv,1721209125,systemVerilog,,/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/tb/tb_top_timer_led.sv,,top_timer_led,,uvm,,,,,,
+/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/synth/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1721209125,verilog,,,,glbl,,uvm,,,,,,
+/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/tb/tb_top_timer_led.sv,1721209125,systemVerilog,,,,tb_top_timer_led,,uvm,,,,,,

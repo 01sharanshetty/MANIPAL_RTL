@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jul 17 14:51:50 2024
+# Process ID: 31144
+# Current directory: /home/sinoradaniels/pulpino/git/timer/synth
+# Command line: vivado
+# Log file: /home/sinoradaniels/pulpino/git/timer/synth/vivado.log
+# Journal file: /home/sinoradaniels/pulpino/git/timer/synth/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.xpr
+close_project
+create_project project_1 /home/sinoradaniels/pulpino/git/timer/synth/project_1 -part xczu3eg-sbva484-1-i
+set_property board_part avnet.com:ultra96v2:part0:1.1 [current_project]
+add_files -norecurse -scan_for_includes {/home/sinoradaniels/pulpino/git/timer/rtl/timer.sv /home/sinoradaniels/pulpino/git/timer/rtl/top_timer_led.sv /home/sinoradaniels/pulpino/git/timer/rtl/led_cntrl.sv}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes /home/sinoradaniels/pulpino/git/timer/tb/tb_top_timer_led.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_top_timer_led.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_top_timer_led/top_timer_led_inst/timer_inst}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_top_timer_led/top_timer_led_inst/led_cntrl_inst}} 
+save_wave_config {/home/sinoradaniels/pulpino/git/timer/synth/project_1/timer_led_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/sinoradaniels/pulpino/git/timer/synth/project_1/timer_led_behav.wcfg
+set_property xsim.view /home/sinoradaniels/pulpino/git/timer/synth/project_1/timer_led_behav.wcfg [get_filesets sim_1]
+relaunch_sim
+run 10 ms
+save_wave_config {/home/sinoradaniels/pulpino/git/timer/synth/project_1/timer_led_behav.wcfg}
+close_sim
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1

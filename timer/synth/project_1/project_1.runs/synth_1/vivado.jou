@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jul 17 15:23:14 2024
+# Process ID: 4097
+# Current directory: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/synth/project_1/project_1.runs/synth_1
+# Command line: vivado -log top_timer_led.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_timer_led.tcl
+# Log file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/synth/project_1/project_1.runs/synth_1/top_timer_led.vds
+# Journal file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/timer_DC/timer/synth/project_1/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_timer_led.tcl -notrace
