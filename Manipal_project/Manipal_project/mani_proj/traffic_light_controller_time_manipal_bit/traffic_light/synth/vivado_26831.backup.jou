@@ -1,0 +1,65 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 15 16:41:33 2024
+# Process ID: 26831
+# Current directory: /home/sinoradaniels/pulpino/git/traffic_light/synth
+# Command line: vivado
+# Log file: /home/sinoradaniels/pulpino/git/traffic_light/synth/vivado.log
+# Journal file: /home/sinoradaniels/pulpino/git/traffic_light/synth/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg
+source tb_traffic_light_cntrl.tcl
+run 1 ms
+run 1 ms
+relaunch_sim
+run 1 ms
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+relaunch_sim
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+open_wave_config /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg
+source tb_traffic_light_cntrl.tcl
+close_sim
+add_files -norecurse -scan_for_includes /home/sinoradaniels/pulpino/git/traffic_light/rtl/top_traffic_light_cntrl.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg
+source tb_traffic_light_cntrl.tcl
+current_wave_config {tb_traffic_light_cntrl_behav.wcfg}
+add_wave {{/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst}} 
+current_wave_config {tb_traffic_light_cntrl_behav.wcfg}
+add_wave {{/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst}} 
+current_wave_config {tb_traffic_light_cntrl_behav.wcfg}
+add_wave {{/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/sec_timer_inst}} 
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+relaunch_sim
+current_wave_config {tb_traffic_light_cntrl_behav.wcfg}
+add_wave {{/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst}} 
+current_wave_config {tb_traffic_light_cntrl_behav.wcfg}
+add_wave {{/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/sec_timer_inst}} 
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+run 10 us
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg
+source tb_traffic_light_cntrl.tcl
+run 10 us
+run 10 us
+run 10 us
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+relaunch_sim

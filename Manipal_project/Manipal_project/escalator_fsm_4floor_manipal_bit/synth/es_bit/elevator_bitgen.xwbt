@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Manipal_project/escalator_fsm_4floor_manipal_bit/synth/es_bit/elevator.ncd
+OUTFILE=/home/ise/Manipal_project/escalator_fsm_4floor_manipal_bit/synth/es_bit/elevator.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=/home/ise/Manipal_project/escalator_fsm_4floor_manipal_bit/synth/es_bit
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

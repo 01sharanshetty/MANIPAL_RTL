@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv,1721049805,systemVerilog,,/home/sinoradaniels/pulpino/git/traffic_light/rtl/top_traffic_light_cntrl.sv,,sec_timer,,uvm,,,,,,
+/home/sinoradaniels/pulpino/git/traffic_light/rtl/top_traffic_light_cntrl.sv,1721048913,systemVerilog,,/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv,,top_traffic_light_cntrl,,uvm,,,,,,
+/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv,1721048413,systemVerilog,,/home/sinoradaniels/pulpino/git/traffic_light/tb/tb_traffic_light_cntrl.sv,,traffic_light_cntrl,,uvm,,,,,,
+/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+/home/sinoradaniels/pulpino/git/traffic_light/tb/tb_traffic_light_cntrl.sv,1721035538,systemVerilog,,,,tb_traffic_light_cntrl,,uvm,,,,,,

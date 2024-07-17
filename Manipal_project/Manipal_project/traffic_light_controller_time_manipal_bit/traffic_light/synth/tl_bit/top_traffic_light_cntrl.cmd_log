@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.xst" -ofn "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.syr" 
+xst -intstyle ise -ifn "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.xst" -ofn "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.syr" 
+xst -intstyle ise -ifn "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.xst" -ofn "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 top_traffic_light_cntrl.ngc top_traffic_light_cntrl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_traffic_light_cntrl_map.ncd top_traffic_light_cntrl.ngd top_traffic_light_cntrl.pcf 
+par -w -intstyle ise -ol high -mt off top_traffic_light_cntrl_map.ncd top_traffic_light_cntrl.ncd top_traffic_light_cntrl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_traffic_light_cntrl.twx top_traffic_light_cntrl.ncd -o top_traffic_light_cntrl.twr top_traffic_light_cntrl.pcf 
+xst -intstyle ise -ifn "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.xst" -ofn "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.syr" 
+xst -intstyle ise -ifn "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.xst" -ofn "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 top_traffic_light_cntrl.ngc top_traffic_light_cntrl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_traffic_light_cntrl_map.ncd top_traffic_light_cntrl.ngd top_traffic_light_cntrl.pcf 
+par -w -intstyle ise -ol high -mt off top_traffic_light_cntrl_map.ncd top_traffic_light_cntrl.ncd top_traffic_light_cntrl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_traffic_light_cntrl.twx top_traffic_light_cntrl.ncd -o top_traffic_light_cntrl.twr top_traffic_light_cntrl.pcf 
+bitgen -intstyle ise -f top_traffic_light_cntrl.ut top_traffic_light_cntrl.ncd 
+xst -intstyle ise -ifn "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.xst" -ofn "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 top_traffic_light_cntrl.ngc top_traffic_light_cntrl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_traffic_light_cntrl_map.ncd top_traffic_light_cntrl.ngd top_traffic_light_cntrl.pcf 
+par -w -intstyle ise -ol high -mt off top_traffic_light_cntrl_map.ncd top_traffic_light_cntrl.ncd top_traffic_light_cntrl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_traffic_light_cntrl.twx top_traffic_light_cntrl.ncd -o top_traffic_light_cntrl.twr top_traffic_light_cntrl.pcf 
+bitgen -intstyle ise -f top_traffic_light_cntrl.ut top_traffic_light_cntrl.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc top_traffic_light_cntrl.ucf -p xc6slx9-tqg144-3 top_traffic_light_cntrl.ngc top_traffic_light_cntrl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o top_traffic_light_cntrl_map.ncd top_traffic_light_cntrl.ngd top_traffic_light_cntrl.pcf 
+par -w -intstyle ise -ol high -mt off top_traffic_light_cntrl_map.ncd top_traffic_light_cntrl.ncd top_traffic_light_cntrl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml top_traffic_light_cntrl.twx top_traffic_light_cntrl.ncd -o top_traffic_light_cntrl.twr top_traffic_light_cntrl.pcf -ucf top_traffic_light_cntrl.ucf 
+bitgen -intstyle ise -f top_traffic_light_cntrl.ut top_traffic_light_cntrl.ncd 

@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jul 16 11:59:54 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P84" LEVEL 1;
+COMP "req_floor<0>" LOCATE = SITE "P14" LEVEL 1;
+COMP "req_floor<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "rec_floor<0>" LOCATE = SITE "P33" LEVEL 1;
+COMP "req_floor<2>" LOCATE = SITE "P16" LEVEL 1;
+COMP "rec_floor<1>" LOCATE = SITE "P32" LEVEL 1;
+COMP "req_floor<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "rec_floor<2>" LOCATE = SITE "P30" LEVEL 1;
+COMP "rec_floor<3>" LOCATE = SITE "P29" LEVEL 1;
+COMP "rst" LOCATE = SITE "P22" LEVEL 1;
+SCHEMATIC END;
+

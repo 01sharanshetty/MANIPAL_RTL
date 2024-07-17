@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sec_timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/top_traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_traffic_light_cntrl
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'rst_count' is not allowed [/home/sinoradaniels/pulpino/git/traffic_light/rtl/top_traffic_light_cntrl.sv:19]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'one_sec_timer' is not allowed [/home/sinoradaniels/pulpino/git/traffic_light/rtl/top_traffic_light_cntrl.sv:20]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'five_sec_timer' is not allowed [/home/sinoradaniels/pulpino/git/traffic_light/rtl/top_traffic_light_cntrl.sv:21]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module traffic_light_cntrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/tb/tb_traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_traffic_light_cntrl

@@ -1,0 +1,127 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:47 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 26237
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Jul 15 19:17:58 IST 2024
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: Ubuntu
+OS Version: 4.15.0-142-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: localhost:10.0
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools1/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools1/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	pradeepjairam
+User home directory: /home/pradeepjairam
+User working directory: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI_BASEROOT: /tools1/Xilinx/Vivado
+HDI_APPROOT: /tools1/Xilinx/Vivado/2020.2
+RDI_DATADIR: /tools1/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: /tools1/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: /home/pradeepjairam/.Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: /home/pradeepjairam/.Xilinx/Vivado/2020.2/
+Vivado layouts directory: /home/pradeepjairam/.Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	/tools1/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth/vivado.log
+Vivado journal file location: 	/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-26237-mirafra
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools1/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: /tools1/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: /tools1/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools1/Xilinx/Vivado/2020.2
+XILINX_SDK: /tools1/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools1/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /tools1/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools1/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,565 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,570 MB. GUI used memory: 62 MB. Current time: 7/15/24, 7:17:59 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth/es_tb/es_tb.xpr", 0); // r
+// [GUI Memory]: 91 MB (+92764kb) [00:00:57]
+// [Engine Memory]: 1,575 MB (+1500219kb) [00:00:57]
+// Opening Vivado Project: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth/es_tb/es_tb.xpr. Version: Vivado v2020.2 
+// bz (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth/es_tb/es_tb.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth/es_tb/es_tb.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 113 MB (+18320kb) [00:01:03]
+// [GUI Memory]: 120 MB (+1042kb) [00:01:04]
+// WARNING: HEventQueue.dispatchEvent() is taking  3297 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools1/Xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,635 MB. GUI used memory: 69 MB. Current time: 7/15/24, 7:18:51 PM IST
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 7395.316 ; gain = 42.051 ; free physical = 5651 ; free virtual = 12818 
+// Project name: es_tb; location: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth/es_tb; part: xc7k325tffg900-2
+dismissDialog("Open Project"); // bz
+// [Engine Memory]: 1,654 MB (+283kb) [00:01:09]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 128 MB (+2951kb) [00:01:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,674 MB. GUI used memory: 69 MB. Current time: 7/15/24, 7:27:59 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,674 MB. GUI used memory: 69 MB. Current time: 7/15/24, 7:57:59 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,674 MB. GUI used memory: 60 MB. Current time: 7/15/24, 8:27:59 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,674 MB. GUI used memory: 60 MB. Current time: 7/15/24, 8:57:59 PM IST

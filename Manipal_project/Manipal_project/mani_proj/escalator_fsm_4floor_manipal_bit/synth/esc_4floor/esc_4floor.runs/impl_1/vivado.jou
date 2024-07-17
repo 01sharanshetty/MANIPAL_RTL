@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jul 14 17:56:53 2024
+# Process ID: 12539
+# Current directory: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4floor/esc_4floor.runs/impl_1
+# Command line: vivado -log elevator.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source elevator.tcl -notrace
+# Log file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4floor/esc_4floor.runs/impl_1/elevator.vdi
+# Journal file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4floor/esc_4floor.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source elevator.tcl -notrace

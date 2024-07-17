@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4_floor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module elevator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_elev

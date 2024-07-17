@@ -1,0 +1,134 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 15 10:16:19 2024
+# Process ID: 7926
+# Current directory: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor
+# Command line: vivado
+# Log file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/vivado.log
+# Journal file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/es_tb/es_tb.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+add_bp {/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4_floor.v} 39
+remove_bps -file {/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4_floor.v} -line 39
+add_bp {/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4_floor.v} 42
+remove_bps -file {/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4_floor.v} -line 42
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+move_files -fileset sim_1 [get_files  /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_tb.v]
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+close_design
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl

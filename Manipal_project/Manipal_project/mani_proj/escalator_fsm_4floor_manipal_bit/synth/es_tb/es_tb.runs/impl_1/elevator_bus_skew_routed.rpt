@@ -1,0 +1,15 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Jul 16 10:11:24 2024
+| Host         : mirafra running 64-bit Ubuntu 16.04.6 LTS
+| Command      : report_bus_skew -warn_on_violation -file elevator_bus_skew_routed.rpt -pb elevator_bus_skew_routed.pb -rpx elevator_bus_skew_routed.rpx
+| Design       : elevator
+| Device       : 7s75-fgga484
+| Speed File   : -2  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

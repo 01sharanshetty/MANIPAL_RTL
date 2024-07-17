@@ -1,0 +1,130 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jul 14 17:27:13 2024
+# Process ID: 32321
+# Current directory: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor
+# Command line: vivado
+# Log file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/vivado.log
+# Journal file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project esc_4floor /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4floor -part xc7s75fgga484-1Q
+add_files -norecurse -scan_for_includes /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4_floor.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_design
+open_run impl_1
+startgroup
+set_property package_pin "" [get_ports [list  {rec_floor[3]} {rec_floor[2]} {rec_floor[1]} {rec_floor[0]} {req_floor[3]} {req_floor[2]} {req_floor[1]} {req_floor[0]} clk rst]]
+place_ports
+endgroup
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_design
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_design
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+startgroup
+set_property package_pin "" [get_ports [list  {rec_floor[3]} {rec_floor[2]} {rec_floor[1]} {rec_floor[0]} {req_floor[3]} {req_floor[2]} {req_floor[1]} {req_floor[0]} clk rst]]
+place_ports
+endgroup
+save_constraints
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_project
+create_project esc_4floor_tb /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4floor_tb -part xc7s75fgga676-1Q
+add_files -norecurse -scan_for_includes {/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_tb.v /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4_floor.v}
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+add_files -fileset constrs_1 -norecurse /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4_floor.v
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_elev.tcl
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source tb_elev.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+close_project
+create_project es_tb /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/es_tb -part xc7s75fgga484-1Q
+add_files -norecurse -scan_for_includes {/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_tb.v /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4_floor.v}
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+add_bp {/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4_floor.v} 19
+remove_bps -file {/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/esc_4_floor.v} -line 19
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl
+close_sim
+launch_simulation
+source tb_elev.tcl

@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jul 16 11:03:42 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "reset_n" LOCATE = SITE "P22" LEVEL 1;
+COMP "n_light<0>" LOCATE = SITE "P30" LEVEL 1;
+COMP "n_light<1>" LOCATE = SITE "P29" LEVEL 1;
+COMP "clk" LOCATE = SITE "P84" LEVEL 1;
+COMP "s_light<0>" LOCATE = SITE "P27" LEVEL 1;
+COMP "s_light<1>" LOCATE = SITE "P26" LEVEL 1;
+COMP "e_light<0>" LOCATE = SITE "P33" LEVEL 1;
+COMP "e_light<1>" LOCATE = SITE "P32" LEVEL 1;
+COMP "w_light<0>" LOCATE = SITE "P24" LEVEL 1;
+COMP "w_light<1>" LOCATE = SITE "P23" LEVEL 1;
+SCHEMATIC END;
+

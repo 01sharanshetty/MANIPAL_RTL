@@ -1,0 +1,637 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 15 14:31:16 2024
+# Process ID: 4421
+# Current directory: /home/sinoradaniels/pulpino/git/traffic_light/synth
+# Command line: vivado
+# Log file: /home/sinoradaniels/pulpino/git/traffic_light/synth/vivado.log
+# Journal file: /home/sinoradaniels/pulpino/git/traffic_light/synth/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools1/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:11 . Memory (MB): peak = 7404.562 ; gain = 51.289 ; free physical = 5649 ; free virtual = 12012
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes /home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 7442.719 ; gain = 0.004 ; free physical = 5653 ; free virtual = 12019
+update_compile_order -fileset sources_1
+set_property top sec_timer [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'sec_timer' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj sec_timer_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sec_timer
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot sec_timer_behav xil_defaultlib.sec_timer xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools1/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot sec_timer_behav xil_defaultlib.sec_timer xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sec_timer
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sec_timer_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/sec_timer_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jul 15 14:45:12 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "sec_timer_behav -key {Behavioral:sim_1:Functional:sec_timer} -tclbatch {sec_timer.tcl} -view {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg
+WARNING: Simulation object /tb_traffic_light_cntrl/clk was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/reset_n was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/n_light was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/e_light was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/s_light was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/w_light was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/CLK_PERIOD was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/traffic_light_cntrl_inst/clk was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/traffic_light_cntrl_inst/reset_n was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/traffic_light_cntrl_inst/n_light was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/traffic_light_cntrl_inst/e_light was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/traffic_light_cntrl_inst/s_light was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/traffic_light_cntrl_inst/w_light was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/traffic_light_cntrl_inst/state was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/traffic_light_cntrl_inst/next_state was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/traffic_light_cntrl_inst/count was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/traffic_light_cntrl_inst/rst_count was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/traffic_light_cntrl_inst/RED was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/traffic_light_cntrl_inst/YELLOW was not found in the design.
+WARNING: Simulation object /tb_traffic_light_cntrl/traffic_light_cntrl_inst/GREEN was not found in the design.
+source sec_timer.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'sec_timer_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 7669.598 ; gain = 50.797 ; free physical = 5597 ; free virtual = 11963
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 7671.598 ; gain = 0.000 ; free physical = 5613 ; free virtual = 11979
+set_property top tb_traffic_light_cntrl [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_traffic_light_cntrl' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_traffic_light_cntrl_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sec_timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module traffic_light_cntrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/tb/tb_traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_traffic_light_cntrl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools1/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" Line 1. Module traffic_light_cntrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" Line 1. Module sec_timer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" Line 1. Module traffic_light_cntrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" Line 1. Module sec_timer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.traffic_light_cntrl
+Compiling module xil_defaultlib.sec_timer
+Compiling module xil_defaultlib.tb_traffic_light_cntrl
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_traffic_light_cntrl_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/tb_traffic_light_cntrl_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Jul 15 14:56:18 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_traffic_light_cntrl_behav -key {Behavioral:sim_1:Functional:tb_traffic_light_cntrl} -tclbatch {tb_traffic_light_cntrl.tcl} -view {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg
+source tb_traffic_light_cntrl.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 7740.492 ; gain = 68.895 ; free physical = 5575 ; free virtual = 11941
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_traffic_light_cntrl_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 7740.492 ; gain = 68.895 ; free physical = 5575 ; free virtual = 11941
+current_wave_config {tb_traffic_light_cntrl_behav.wcfg}
+tb_traffic_light_cntrl_behav.wcfg
+add_wave {{/tb_traffic_light_cntrl/sec_timer_inst/clk}} {{/tb_traffic_light_cntrl/sec_timer_inst/reset_n}} {{/tb_traffic_light_cntrl/sec_timer_inst/rst_count}} {{/tb_traffic_light_cntrl/sec_timer_inst/one_sec_timer}} {{/tb_traffic_light_cntrl/sec_timer_inst/five_sec_timer}} {{/tb_traffic_light_cntrl/sec_timer_inst/count}} {{/tb_traffic_light_cntrl/sec_timer_inst/sec_count}} {{/tb_traffic_light_cntrl/sec_timer_inst/FREQ}} {{/tb_traffic_light_cntrl/sec_timer_inst/DELAY_IN_SEC}} 
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_traffic_light_cntrl' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_traffic_light_cntrl_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools1/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7742.492 ; gain = 0.000 ; free physical = 5592 ; free virtual = 11958
+run 1 us
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+run 1 ms
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_traffic_light_cntrl' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_traffic_light_cntrl_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sec_timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module traffic_light_cntrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/tb/tb_traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_traffic_light_cntrl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools1/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" Line 1. Module traffic_light_cntrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" Line 1. Module sec_timer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" Line 1. Module traffic_light_cntrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" Line 1. Module sec_timer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.traffic_light_cntrl
+Compiling module xil_defaultlib.sec_timer
+Compiling module xil_defaultlib.tb_traffic_light_cntrl
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_traffic_light_cntrl_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_traffic_light_cntrl_behav -key {Behavioral:sim_1:Functional:tb_traffic_light_cntrl} -tclbatch {tb_traffic_light_cntrl.tcl} -view {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg
+source tb_traffic_light_cntrl.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_traffic_light_cntrl_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 7758.500 ; gain = 16.008 ; free physical = 5587 ; free virtual = 11953
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+run 1 ms
+run 1 ms
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_traffic_light_cntrl' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_traffic_light_cntrl_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sec_timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module traffic_light_cntrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/tb/tb_traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_traffic_light_cntrl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools1/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" Line 1. Module traffic_light_cntrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" Line 1. Module sec_timer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" Line 1. Module traffic_light_cntrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" Line 1. Module sec_timer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.traffic_light_cntrl
+Compiling module xil_defaultlib.sec_timer
+Compiling module xil_defaultlib.tb_traffic_light_cntrl
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_traffic_light_cntrl_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_traffic_light_cntrl_behav -key {Behavioral:sim_1:Functional:tb_traffic_light_cntrl} -tclbatch {tb_traffic_light_cntrl.tcl} -view {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg
+source tb_traffic_light_cntrl.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_traffic_light_cntrl_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 7781.512 ; gain = 23.012 ; free physical = 5528 ; free virtual = 11894
+run 1 ms
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_traffic_light_cntrl' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_traffic_light_cntrl_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools1/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 7781.512 ; gain = 0.000 ; free physical = 5543 ; free virtual = 11909
+run 1 us
+run 1 us
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_traffic_light_cntrl' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_traffic_light_cntrl_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sec_timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module traffic_light_cntrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/tb/tb_traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_traffic_light_cntrl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools1/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" Line 1. Module traffic_light_cntrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" Line 1. Module sec_timer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" Line 1. Module traffic_light_cntrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" Line 1. Module sec_timer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.traffic_light_cntrl
+Compiling module xil_defaultlib.sec_timer
+Compiling module xil_defaultlib.tb_traffic_light_cntrl
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_traffic_light_cntrl_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 7787.512 ; gain = 6.000 ; free physical = 5531 ; free virtual = 11886
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_traffic_light_cntrl' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_traffic_light_cntrl_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sec_timer
+ERROR: [VRFC 10-2989] 'ec_count' is not declared [/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv:32]
+ERROR: [VRFC 10-2865] module 'sec_timer' ignored due to previous errors [/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv:1]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_traffic_light_cntrl' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_traffic_light_cntrl_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sec_timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module traffic_light_cntrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/tb/tb_traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_traffic_light_cntrl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools1/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" Line 1. Module traffic_light_cntrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" Line 1. Module sec_timer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" Line 1. Module traffic_light_cntrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" Line 1. Module sec_timer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.traffic_light_cntrl
+Compiling module xil_defaultlib.sec_timer
+Compiling module xil_defaultlib.tb_traffic_light_cntrl
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_traffic_light_cntrl_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_traffic_light_cntrl_behav -key {Behavioral:sim_1:Functional:tb_traffic_light_cntrl} -tclbatch {tb_traffic_light_cntrl.tcl} -view {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+open_wave_config /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg
+source tb_traffic_light_cntrl.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7833.539 ; gain = 46.027 ; free physical = 5519 ; free virtual = 11888
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_traffic_light_cntrl_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 7833.539 ; gain = 46.027 ; free physical = 5519 ; free virtual = 11888
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 ms
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_traffic_light_cntrl' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_traffic_light_cntrl_vlog.prj
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sec_timer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module traffic_light_cntrl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/sinoradaniels/pulpino/git/traffic_light/tb/tb_traffic_light_cntrl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_traffic_light_cntrl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools1/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" Line 1. Module traffic_light_cntrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" Line 1. Module sec_timer doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv" Line 1. Module traffic_light_cntrl doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/sinoradaniels/pulpino/git/traffic_light/rtl/sec_timer.sv" Line 1. Module sec_timer doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.traffic_light_cntrl
+Compiling module xil_defaultlib.sec_timer
+Compiling module xil_defaultlib.tb_traffic_light_cntrl
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_traffic_light_cntrl_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 7835.535 ; gain = 1.996 ; free physical = 5529 ; free virtual = 11884
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_traffic_light_cntrl' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xvlog --incr --relax -L uvm -prj tb_traffic_light_cntrl_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.sim/sim_1/behav/xsim'
+xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /tools1/Xilinx/Vivado/2020.2/bin/unwrapped/lnx64.o/xelab -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2020.2

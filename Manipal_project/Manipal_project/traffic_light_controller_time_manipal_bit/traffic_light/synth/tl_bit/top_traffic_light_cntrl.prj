@@ -1,0 +1,3 @@
+verilog work "../../rtl/rtl/traffic_light_cntrl.v"
+verilog work "../../rtl/rtl/sec_timer.v"
+verilog work "../../rtl/rtl/top_traffic_light_cntrl.v"

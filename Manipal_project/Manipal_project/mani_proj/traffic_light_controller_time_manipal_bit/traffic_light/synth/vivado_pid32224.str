@@ -1,0 +1,480 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:47 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 32224
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Jul 10 13:09:26 IST 2024
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: Ubuntu
+OS Version: 4.15.0-142-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: localhost:11.0
+Screen size: 1536x864
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/tools1/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2
+Java executable location: 	/tools1/Xilinx/Vivado/2020.2/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sinoradaniels
+User home directory: /home/sinoradaniels
+User working directory: /home/sinoradaniels/pulpino/git/traffic_light/synth
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI_BASEROOT: /tools1/Xilinx/Vivado
+HDI_APPROOT: /tools1/Xilinx/Vivado/2020.2
+RDI_DATADIR: /tools1/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: /tools1/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: /home/sinoradaniels/.Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: /home/sinoradaniels/.Xilinx/Vivado/2020.2/
+Vivado layouts directory: /home/sinoradaniels/.Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	/tools1/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/sinoradaniels/pulpino/git/traffic_light/synth/vivado.log
+Vivado journal file location: 	/home/sinoradaniels/pulpino/git/traffic_light/synth/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-32224-mirafra
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools1/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: /tools1/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: /tools1/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: /tools1/Xilinx/Vivado/2020.2
+XILINX_SDK: /tools1/Xilinx/Vitis/2020.2
+XILINX_VITIS: /tools1/Xilinx/Vitis/2020.2
+XILINX_VIVADO: /tools1/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: /tools1/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,503 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,513 MB. GUI used memory: 61 MB. Current time: 7/10/24, 1:09:27 PM IST
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create Project"); // y
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// [GUI Memory]: 68 MB (+68498kb) [00:00:50]
+// [Engine Memory]: 1,516 MB (+1438370kb) [00:00:50]
+// [GUI Memory]: 89 MB (+18967kb) [00:00:53]
+// [GUI Memory]: 94 MB (+18kb) [00:00:53]
+// [GUI Memory]: 112 MB (+14458kb) [00:00:53]
+// f (cr): New Project: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3635 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3577 ms.
+// Elapsed time: 22 seconds
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  3534 ms.
+// Elapsed time: 13 seconds
+setFileChooser("/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_controller.sv");
+// HMemoryUtils.trashcanNow. Engine heap size: 1,529 MB. GUI used memory: 64 MB. Current time: 7/10/24, 1:10:32 PM IST
+// Elapsed time: 12 seconds
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+// WARNING: HEventQueue.dispatchEvent() is taking  1631 ms.
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // i
+// WARNING: HEventQueue.dispatchEvent() is taking  7421 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,650 MB. GUI used memory: 70 MB. Current time: 7/10/24, 1:10:56 PM IST
+selectTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Ultra96v2 Single Board Computer ; Ultra96v2 Single Board Computer ; avnet.com ; 1.1 ; xczu3eg-sbva484-1-i ; 484 ; Rev 2 ; 82 ; 70560 ; 141120 ; 216 ; 0 ; 360 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 3 ;  ; -40 ; 100 ; 100 ; I ; 0.825 ; 0.850 ; 0.876", 2, "Ultra96v2 Single Board Computer", 0); // d
+selectTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Ultra96v2 Single Board Computer ; Ultra96v2 Single Board Computer ; avnet.com ; 1.1 ; xczu3eg-sbva484-1-i ; 484 ; Rev 2 ; 82 ; 70560 ; 141120 ; 216 ; 0 ; 360 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 3 ;  ; -40 ; 100 ; 100 ; I ; 0.825 ; 0.850 ; 0.876", 2, "Ultra96v2 Single Board Computer", 0); // d
+// [Engine Memory]: 1,652 MB (+62702kb) [00:02:05]
+selectButton("NEXT", "Next >"); // JButton
+// bz (cr):  Create Project : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  6593 ms.
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: create_project project_1 /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1 -part xczu3eg-sbva484-1-i 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  3402 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools1/Xilinx/Vivado/2020.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,703 MB. GUI used memory: 79 MB. Current time: 7/10/24, 1:11:22 PM IST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 7411.086 ; gain = 43.027 ; free physical = 7429 ; free virtual = 13760 
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part avnet.com:ultra96v2:part0:1.1 [current_project] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse -scan_for_includes /home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_controller.sv 
+// Elapsed time: 21 seconds
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 96 seconds
+dismissDialog("Create Project"); // bz
+dismissDialog("New Project"); // f
+// [GUI Memory]: 132 MB (+14612kb) [00:02:29]
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 140 MB (+1653kb) [00:02:31]
+// [Engine Memory]: 1,739 MB (+4379kb) [00:02:34]
+// Elapsed time: 27 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0); // D
+// PAPropertyPanels.initPanels (traffic_light_controller.sv) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, traffic_light_controller (traffic_light_controller.sv)]", 1, false); // D
+// WARNING: HEventQueue.dispatchEvent() is taking  1213 ms.
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cr): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  6641 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  5310 ms.
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Jul 10 13:12:16 2024] Launched synth_1... Run output will be captured here: /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 15 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3104 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2522 ms.
+// Elapsed time: 60 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3242 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3334 ms.
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3650 ms.
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Wed Jul 10 13:13:27 2024] Launched impl_1... Run output will be captured here: /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1337 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 4327 ms. Increasing delay to 3000 ms.
+// 'c' command handler elapsed time: 15 seconds
+// WARNING: updateGUI() is taking  1415 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// WARNING: updateGUI() is taking  2756 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4259 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1440 ms.
+// WARNING: updateGUI() is taking  3056 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3056 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1558 ms.
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  3537 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: updateGUI() is taking  4228 ms.
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 4321ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4322 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2919 ms.
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  4652 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,768 MB. GUI used memory: 90 MB. Current time: 7/10/24, 1:14:29 PM IST
+// WARNING: HEventQueue.dispatchEvent() is taking  3477 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 21372 ms. Increasing delay to 4000 ms.
+// ag (cr): Implementation Failed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  7648 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2321 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1252 ms.
+// Elapsed time: 151 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ag
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net counter[0] has multiple drivers: counter_reg[0]__0/Q, and counter_reg[0]/Q.. ]", 7, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net counter[0] has multiple drivers: counter_reg[0]__0/Q, and counter_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net counter[2] has multiple drivers: counter_reg[2]__0/Q, and counter_reg[2]/Q.. ]", 9, false, false, false, false, false, true); // ah - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net counter[0] has multiple drivers: counter_reg[0]__0/Q, and counter_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net counter[1] has multiple drivers: counter_reg[1]__0/Q, and counter_reg[1]/Q.. ]", 8, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net counter[0] has multiple drivers: counter_reg[0]__0/Q, and counter_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net counter[1] has multiple drivers: counter_reg[1]__0/Q, and counter_reg[1]/Q.. ]", 8, false, false, false, false, false, true); // ah - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net counter[0] has multiple drivers: counter_reg[0]__0/Q, and counter_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net counter[1] has multiple drivers: counter_reg[1]__0/Q, and counter_reg[1]/Q.. ]", 8, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net counter[0] has multiple drivers: counter_reg[0]__0/Q, and counter_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net counter[1] has multiple drivers: counter_reg[1]__0/Q, and counter_reg[1]/Q.. ]", 8, false, false, false, false, false, true); // ah - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, traffic_light_controller (traffic_light_controller.sv)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, traffic_light_controller (traffic_light_controller.sv)]", 1, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 150 MB (+3117kb) [00:19:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,770 MB. GUI used memory: 92 MB. Current time: 7/10/24, 1:44:32 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,770 MB. GUI used memory: 72 MB. Current time: 7/10/24, 2:14:32 PM IST
+// Elapsed time: 3924 seconds
+selectCodeEditor("traffic_light_controller.sv", 422, 78); // bP
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net counter[0] has multiple drivers: counter_reg[0]__0/Q, and counter_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net counter[1] has multiple drivers: counter_reg[1]__0/Q, and counter_reg[1]/Q.. ]", 8, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net counter[0] has multiple drivers: counter_reg[0]__0/Q, and counter_reg[0]/Q.. , [DRC MDRV-1] Multiple Driver Nets: Net counter[1] has multiple drivers: counter_reg[1]__0/Q, and counter_reg[1]/Q.. ]", 8, false, false, false, false, false, true); // ah - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,786 MB. GUI used memory: 73 MB. Current time: 7/10/24, 2:27:07 PM IST
+// Elapsed time: 308 seconds
+selectCodeEditor("traffic_light_controller.sv", 310, 160); // bP
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, traffic_light_controller (traffic_light_controller.sv)]", 1, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, traffic_light_controller (traffic_light_controller.sv)]", 1, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 306 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectCodeEditor("traffic_light_controller.sv", 331, 185); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3681 ms.
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cr): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4631 ms.
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3920 ms.
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// Tcl Message: [Wed Jul 10 14:32:43 2024] Launched synth_1... Run output will be captured here: /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 15 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3342 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1236 ms.
+// Elapsed time: 1073 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cr): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4253 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4000 ms.
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 4 
+// Tcl Message: [Wed Jul 10 14:50:48 2024] Launched impl_1... Run output will be captured here: /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 11 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3871 ms.
+// Elapsed time: 194 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// cD (cr): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4032 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 7 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_MODIFY
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  3835 ms.
+// TclEventType: RUN_MODIFY
+// WARNING: HEventQueue.dispatchEvent() is taking  1175 ms.
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Wed Jul 10 14:54:12 2024] Launched impl_1... Run output will be captured here: /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2474 ms. Increasing delay to 5000 ms.
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:05 . Memory (MB): peak = 7482.254 ; gain = 0.000 ; free physical = 7347 ; free virtual = 13694 
+dismissDialog("Generate Bitstream"); // bz
+selectCodeEditor("traffic_light_controller.sv", 329, 145); // bP
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4177 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2100 ms.
+// Elapsed time: 85 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_LOG_WINDOW
+dismissDialog("Bitstream Generation Failed"); // ag
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aK
+selectTab((HResource) null, (HResource) null, "Log", 2); // aK
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+selectCodeEditor("traffic_light_controller.sv", 240, 211); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,790 MB. GUI used memory: 87 MB. Current time: 7/10/24, 2:57:07 PM IST
+// Elapsed time: 283 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  5272 ms.
+// Elapsed time: 11 seconds
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  4699 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2973 ms.
+// Elapsed time: 32 seconds
+setFileChooser("/home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv");
+selectTable(PAResourceQtoS.SrcChooserTable_SRC_CHOOSER_TABLE, "VSourceFile ; 1 ; traffic_light_cntrl.sv ; xil_defaultlib ; /home/sinoradaniels/pulpino/git/traffic_light/rtl", 0, "traffic_light_cntrl.sv", 2); // bQ
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// WARNING: HEventQueue.dispatchEvent() is taking  4864 ms.
+dismissFileChooser();
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 64 seconds
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HEventQueue.dispatchEvent() is taking  1203 ms.
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: add_files -norecurse -scan_for_includes /home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_cntrl.sv 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Add Sources  : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  7532 ms.
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 7482.258 ; gain = 0.004 ; free physical = 7400 ; free virtual = 13748 
+// Elapsed time: 10 seconds
+dismissDialog("Add Sources"); // bz
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,807 MB. GUI used memory: 80 MB. Current time: 7/10/24, 3:02:07 PM IST
+// Elapsed time: 50 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, traffic_light_controller (traffic_light_controller.sv)]", 1, false); // D
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cr): Remove Sources: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  5266 ms.
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'c' command handler elapsed time: 8 seconds
+dismissDialog("Remove Sources"); // aE
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_controller.sv] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// aE (cr): Remove Sources: addNotify
+// bz (aE):  Remove Sources : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  5189 ms.
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: remove_files  /home/sinoradaniels/pulpino/git/traffic_light/rtl/traffic_light_controller.sv 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:06 . Memory (MB): peak = 7514.273 ; gain = 0.000 ; free physical = 7402 ; free virtual = 13749 
+dismissDialog("Remove Sources"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,839 MB. GUI used memory: 80 MB. Current time: 7/10/24, 3:03:13 PM IST
+// [Engine Memory]: 1,839 MB (+13923kb) [01:54:15]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, traffic_light_cntrl (traffic_light_cntrl.sv)]", 1, false); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4426 ms.
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  4488 ms.
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// WARNING: HEventQueue.dispatchEvent() is taking  1867 ms.
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1748 ms.
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1791 ms.
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// WARNING: HEventQueue.dispatchEvent() is taking  3957 ms.
+// Tcl Message: reset_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 7564.293 ; gain = 0.000 ; free physical = 7405 ; free virtual = 13751 
+// cD (cr): Launch Runs: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  5827 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2554 ms.
+// Elapsed time: 27 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 40 seconds
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// bz (cr):  Generate Bitstream : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  5513 ms.
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jul 10 15:04:23 2024] Launched synth_1... Run output will be captured here: /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.runs/synth_1/runme.log [Wed Jul 10 15:04:24 2024] Launched impl_1... Run output will be captured here: /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:07 . Memory (MB): peak = 7564.293 ; gain = 0.000 ; free physical = 7391 ; free virtual = 13737 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Failed: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  5637 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,872 MB. GUI used memory: 82 MB. Current time: 7/10/24, 3:33:17 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,872 MB. GUI used memory: 71 MB. Current time: 7/10/24, 4:03:17 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,872 MB. GUI used memory: 71 MB. Current time: 7/10/24, 4:33:17 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,872 MB. GUI used memory: 71 MB. Current time: 7/10/24, 5:03:18 PM IST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,872 MB. GUI used memory: 71 MB. Current time: 7/10/24, 5:33:18 PM IST

@@ -1,0 +1,38 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -nt timestamp -uc top_traffic_light_cntrl.ucf -p xc6slx9-tqg144-3
+top_traffic_light_cntrl.ngc top_traffic_light_cntrl.ngd
+
+Reading NGO file
+"/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_lig
+ht/synth/tl_bit/top_traffic_light_cntrl.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "top_traffic_light_cntrl.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 498920 kilobytes
+
+Writing NGD file "top_traffic_light_cntrl.ngd" ...
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+Writing NGDBUILD log file "top_traffic_light_cntrl.bld"...

@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jul 11 12:10:56 2024
+# Process ID: 3683
+# Current directory: /home/sinoradaniels/pulpino/git/traffic_light/synth
+# Command line: vivado
+# Log file: /home/sinoradaniels/pulpino/git/traffic_light/synth/vivado.log
+# Journal file: /home/sinoradaniels/pulpino/git/traffic_light/synth/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes /home/sinoradaniels/pulpino/git/traffic_light/tb/tb_traffic_light_cntrl.sv
+update_compile_order -fileset sim_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+update_compile_order -fileset sim_1
+open_run impl_1
+close_design
+launch_simulation
+launch_simulation
+source tb_traffic_light_cntrl.tcl
+run 1 us
+run all
+close_sim
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+source tb_traffic_light_cntrl.tcl
+run 1 us
+run 1 us
+relaunch_sim
+run 1 us
+current_wave_config {Untitled 2}
+add_wave {{/tb_traffic_light_cntrl/traffic_light_cntrl_inst}} 
+relaunch_sim
+run 1 us
+run 1 us
+run 1 us
+save_wave_config {/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg}
+add_files -fileset sim_1 -norecurse /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg
+set_property xsim.view /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg [get_filesets sim_1]
+close_sim
+open_run impl_1
+startgroup
+set_property package_pin "" [get_ports [list  {e_light[1]} {e_light[0]} {n_light[1]} {n_light[0]} {s_light[1]} {s_light[0]} {w_light[1]} {w_light[0]} clk reset_n]]
+place_ports
+endgroup
+save_constraints -force
+startgroup
+set_property package_pin "" [get_ports [list  {e_light[1]} {e_light[0]} {n_light[1]} {n_light[0]} {s_light[1]} {s_light[0]} {w_light[1]} {w_light[0]} clk reset_n]]
+place_ports
+endgroup
+report_io -name io_1
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+launch_simulation
+open_wave_config /home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/tb_traffic_light_cntrl_behav.wcfg
+source tb_traffic_light_cntrl.tcl
+run all
+relaunch_sim

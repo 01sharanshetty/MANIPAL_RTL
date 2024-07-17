@@ -1,0 +1,245 @@
+
+*** Running vivado
+    with args -log top_traffic_light_cntrl.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_traffic_light_cntrl.tcl
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source top_traffic_light_cntrl.tcl -notrace
+Command: synth_design -top top_traffic_light_cntrl -part xc7s15csga225-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Device 21-403] Loading part xc7s15csga225-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 23776
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2410.824 ; gain = 0.000 ; free physical = 3852 ; free virtual = 11139
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_traffic_light_cntrl' [/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/rtl/top_traffic_light_cntrl.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'traffic_light_cntrl' [/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/rtl/traffic_light_cntrl.sv:1]
+	Parameter RED bound to: 2'b00 
+	Parameter YELLOW bound to: 2'b01 
+	Parameter GREEN bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'traffic_light_cntrl' (1#1) [/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/rtl/traffic_light_cntrl.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'sec_timer' [/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/rtl/sec_timer.sv:1]
+	Parameter FREQ bound to: 50000000 - type: integer 
+	Parameter DELAY_IN_SEC bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sec_timer' (2#1) [/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/rtl/sec_timer.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_traffic_light_cntrl' (3#1) [/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/rtl/top_traffic_light_cntrl.sv:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2410.824 ; gain = 0.000 ; free physical = 4643 ; free virtual = 11930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2410.824 ; gain = 0.000 ; free physical = 4637 ; free virtual = 11924
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2410.824 ; gain = 0.000 ; free physical = 4637 ; free virtual = 11924
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2410.824 ; gain = 0.000 ; free physical = 4630 ; free virtual = 11917
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.srcs/constrs_1/new/traffic_light_cntrl.xdc]
+Finished Parsing XDC File [/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.srcs/constrs_1/new/traffic_light_cntrl.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2466.520 ; gain = 0.000 ; free physical = 4556 ; free virtual = 11843
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2466.520 ; gain = 0.000 ; free physical = 4556 ; free virtual = 11843
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4614 ; free virtual = 11901
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15csga225-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4614 ; free virtual = 11901
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4614 ; free virtual = 11901
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'traffic_light_cntrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                        000000001 |                             0000
+                      S0 |                        000000010 |                             0001
+                      S1 |                        000000100 |                             0010
+                      S2 |                        000001000 |                             0011
+                      S3 |                        000010000 |                             0100
+                      S4 |                        000100000 |                             0101
+                      S5 |                        001000000 |                             0110
+                      S6 |                        010000000 |                             0111
+                      S7 |                        100000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'traffic_light_cntrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4603 ; free virtual = 11891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   26 Bit        Muxes := 2     
+	   9 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 8     
+	   2 Input    6 Bit        Muxes := 2     
+	   9 Input    2 Bit        Muxes := 4     
+	   9 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4574 ; free virtual = 11865
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4472 ; free virtual = 11763
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4472 ; free virtual = 11763
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4471 ; free virtual = 11762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4471 ; free virtual = 11762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4471 ; free virtual = 11762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4471 ; free virtual = 11762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4471 ; free virtual = 11762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4471 ; free virtual = 11762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4471 ; free virtual = 11762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |     1|
+|4     |LUT3   |     8|
+|5     |LUT4   |    40|
+|6     |LUT5   |     5|
+|7     |LUT6   |     5|
+|8     |FDCE   |    42|
+|9     |FDPE   |     1|
+|10    |IBUF   |     2|
+|11    |OBUF   |     8|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2466.520 ; gain = 55.695 ; free physical = 4471 ; free virtual = 11762
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2466.520 ; gain = 0.000 ; free physical = 4522 ; free virtual = 11813
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2466.527 ; gain = 55.695 ; free physical = 4523 ; free virtual = 11814
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2466.527 ; gain = 0.000 ; free physical = 4608 ; free virtual = 11899
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2466.527 ; gain = 0.000 ; free physical = 4556 ; free virtual = 11847
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 2466.527 ; gain = 55.805 ; free physical = 4702 ; free virtual = 11993
+INFO: [Common 17-1381] The checkpoint '/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/synth_1/top_traffic_light_cntrl.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_traffic_light_cntrl_utilization_synth.rpt -pb top_traffic_light_cntrl_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 16 11:02:40 2024...

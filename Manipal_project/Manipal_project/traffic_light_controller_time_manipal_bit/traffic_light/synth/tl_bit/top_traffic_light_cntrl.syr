@@ -1,0 +1,458 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: top_traffic_light_cntrl.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_traffic_light_cntrl.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_traffic_light_cntrl"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : top_traffic_light_cntrl
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/rtl/rtl/traffic_light_cntrl.v" into library work
+Parsing module <traffic_light_cntrl>.
+WARNING:HDLCompiler:568 - "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/rtl/rtl/traffic_light_cntrl.v" Line 35: Constant value is truncated to fit in <2> bits.
+WARNING:HDLCompiler:568 - "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/rtl/rtl/traffic_light_cntrl.v" Line 36: Constant value is truncated to fit in <2> bits.
+WARNING:HDLCompiler:568 - "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/rtl/rtl/traffic_light_cntrl.v" Line 38: Constant value is truncated to fit in <2> bits.
+WARNING:HDLCompiler:568 - "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/rtl/rtl/traffic_light_cntrl.v" Line 39: Constant value is truncated to fit in <2> bits.
+Analyzing Verilog file "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/rtl/rtl/sec_timer.v" into library work
+Parsing module <sec_timer>.
+Analyzing Verilog file "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/rtl/rtl/top_traffic_light_cntrl.v" into library work
+Parsing module <top_traffic_light_cntrl>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <top_traffic_light_cntrl>.
+
+Elaborating module <traffic_light_cntrl>.
+
+Elaborating module <sec_timer>.
+WARNING:HDLCompiler:413 - "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/rtl/rtl/sec_timer.v" Line 52: Result of 7-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/rtl/rtl/sec_timer.v" Line 59: Result of 27-bit expression is truncated to fit in 26-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <top_traffic_light_cntrl>.
+    Related source file is "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/rtl/rtl/top_traffic_light_cntrl.v".
+    Summary:
+	no macro.
+Unit <top_traffic_light_cntrl> synthesized.
+
+Synthesizing Unit <traffic_light_cntrl>.
+    Related source file is "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/rtl/rtl/traffic_light_cntrl.v".
+    Found 4-bit register for signal <state>.
+INFO:Xst:1799 - State 0110 is never reached in FSM <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset_n (negative)                             |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <traffic_light_cntrl> synthesized.
+
+Synthesizing Unit <sec_timer>.
+    Related source file is "/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/rtl/rtl/sec_timer.v".
+    Found 6-bit register for signal <sec_count>.
+    Found 26-bit register for signal <count>.
+    Found 1-bit register for signal <one_sec_timer>.
+    Found 1-bit register for signal <five_sec_timer>.
+    Found 6-bit adder for signal <sec_count[5]_GND_3_o_add_3_OUT> created at line 52.
+    Found 26-bit adder for signal <count[25]_GND_3_o_add_5_OUT> created at line 59.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+Unit <sec_timer> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 26-bit adder                                          : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 4
+ 1-bit register                                        : 2
+ 26-bit register                                       : 1
+ 6-bit register                                        : 1
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 5
+ 26-bit 2-to-1 multiplexer                             : 2
+ 6-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 26-bit adder                                          : 1
+ 6-bit adder                                           : 1
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+# Multiplexers                                         : 9
+ 1-bit 2-to-1 multiplexer                              : 5
+ 26-bit 2-to-1 multiplexer                             : 2
+ 6-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 00
+ 0001  | 01
+ 0010  | 10
+ 0011  | 11
+ 0110  | unreached
+-------------------
+
+Optimizing unit <top_traffic_light_cntrl> ...
+
+Optimizing unit <sec_timer> ...
+WARNING:Xst:1710 - FF/Latch <sec_timer_inst/sec_count_5> (without init value) has a constant value of 0 in block <top_traffic_light_cntrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sec_timer_inst/sec_count_4> (without init value) has a constant value of 0 in block <top_traffic_light_cntrl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sec_timer_inst/sec_count_3> (without init value) has a constant value of 0 in block <top_traffic_light_cntrl>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_traffic_light_cntrl, actual ratio is 1.
+FlipFlop sec_timer_inst/five_sec_timer has been replicated 1 time(s)
+FlipFlop sec_timer_inst/one_sec_timer has been replicated 1 time(s)
+FlipFlop traffic_light_cntrl_inst/state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop traffic_light_cntrl_inst/state_FSM_FFd2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 37
+ Flip-Flops                                            : 37
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : top_traffic_light_cntrl.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 127
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 25
+#      LUT2                        : 4
+#      LUT3                        : 2
+#      LUT4                        : 3
+#      LUT5                        : 3
+#      LUT6                        : 34
+#      MUXCY                       : 25
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 37
+#      FDC                         : 37
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 1
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              37  out of  11440     0%  
+ Number of Slice LUTs:                   74  out of   5720     1%  
+    Number used as Logic:                74  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     77
+   Number with an unused Flip Flop:      40  out of     77    51%  
+   Number with an unused LUT:             3  out of     77     3%  
+   Number of fully used LUT-FF pairs:    34  out of     77    44%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    102     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 37    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.021ns (Maximum Frequency: 248.670MHz)
+   Minimum input arrival time before clock: 3.799ns
+   Maximum output required time after clock: 5.262ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.021ns (frequency: 248.670MHz)
+  Total number of paths / destination ports: 1381 / 37
+-------------------------------------------------------------------------
+Delay:               4.021ns (Levels of Logic = 3)
+  Source:            sec_timer_inst/count_8 (FF)
+  Destination:       sec_timer_inst/count_25 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: sec_timer_inst/count_8 to sec_timer_inst/count_25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.981  sec_timer_inst/count_8 (sec_timer_inst/count_8)
+     LUT6:I0->O            3   0.203   0.898  sec_timer_inst/GND_3_o_GND_3_o_equal_2_o<25>4 (sec_timer_inst/GND_3_o_GND_3_o_equal_2_o<25>3)
+     LUT6:I2->O           15   0.203   0.982  sec_timer_inst/GND_3_o_GND_3_o_equal_2_o<25>5 (sec_timer_inst/GND_3_o_GND_3_o_equal_2_o)
+     LUT6:I5->O            1   0.205   0.000  sec_timer_inst/Mmux_count[25]_GND_3_o_mux_8_OUT181 (sec_timer_inst/count[25]_GND_3_o_mux_8_OUT<25>)
+     FDC:D                     0.102          sec_timer_inst/count_25
+    ----------------------------------------
+    Total                      4.021ns (1.160ns logic, 2.861ns route)
+                                       (28.8% logic, 71.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 37 / 37
+-------------------------------------------------------------------------
+Offset:              3.799ns (Levels of Logic = 2)
+  Source:            reset_n (PAD)
+  Destination:       traffic_light_cntrl_inst/state_FSM_FFd2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset_n to traffic_light_cntrl_inst/state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  reset_n_IBUF (reset_n_IBUF)
+     INV:I->O             37   0.206   1.362  reset_n_inv1_INV_0 (reset_n_inv)
+     FDC:CLR                   0.430          traffic_light_cntrl_inst/state_FSM_FFd2
+    ----------------------------------------
+    Total                      3.799ns (1.858ns logic, 1.941ns route)
+                                       (48.9% logic, 51.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 10 / 6
+-------------------------------------------------------------------------
+Offset:              5.262ns (Levels of Logic = 2)
+  Source:            traffic_light_cntrl_inst/state_FSM_FFd2 (FF)
+  Destination:       s_light<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: traffic_light_cntrl_inst/state_FSM_FFd2 to s_light<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             34   0.447   1.425  traffic_light_cntrl_inst/state_FSM_FFd2 (traffic_light_cntrl_inst/state_FSM_FFd2)
+     LUT2:I0->O            2   0.203   0.616  traffic_light_cntrl_inst/state__n0041<4>1 (s_light_0_OBUF)
+     OBUF:I->O                 2.571          s_light_0_OBUF (s_light<0>)
+    ----------------------------------------
+    Total                      5.262ns (3.221ns logic, 2.041ns route)
+                                       (61.2% logic, 38.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.021|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 3.70 secs
+ 
+--> 
+
+
+Total memory usage is 483072 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

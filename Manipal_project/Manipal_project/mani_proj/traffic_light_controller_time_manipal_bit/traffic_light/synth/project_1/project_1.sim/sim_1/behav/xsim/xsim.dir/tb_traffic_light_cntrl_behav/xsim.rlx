@@ -1,0 +1,12 @@
+
+{ 
+    crc :  8286393090699148562  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 0fb839f8a18f4b09bb773d4e4cb5bb0e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_traffic_light_cntrl_behav xil_defaultlib.tb_traffic_light_cntrl xil_defaultlib.glbl" , 
+    buildDate : "Nov 18 2020" , 
+    buildTime : "09:20:35" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/tb_traffic_light_cntrl_behav/xsimk\"   \"xsim.dir/tb_traffic_light_cntrl_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/tb_traffic_light_cntrl_behav/obj/xsim_1.lnx64.o\" -L\"/tools1/Xilinx/Vivado/2020.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

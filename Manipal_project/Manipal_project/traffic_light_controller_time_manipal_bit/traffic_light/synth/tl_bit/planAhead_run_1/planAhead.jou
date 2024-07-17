@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Tue Jul 16 10:56:48 2024
+# Process ID: 8284
+# Log file: /home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/planAhead_run_1/planAhead.log
+# Journal file: /home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P84 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin P22 [get_ports reset_n]
+endgroup
+set_property package_pin "" [get_ports [list  {e_light[1]}]]
+startgroup
+set_property package_pin P33 [get_ports {e_light[0]}]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports {e_light[1]}]
+endgroup
+set_property is_loc_fixed false [get_ports [list  {e_light[1]}]]
+set_property is_loc_fixed true [get_ports [list  {e_light[1]}]]
+startgroup
+set_property package_pin P30 [get_ports {n_light[0]}]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports {n_light[1]}]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports {s_light[0]}]
+endgroup
+startgroup
+set_property package_pin P26 [get_ports {s_light[1]}]
+endgroup
+startgroup
+set_property package_pin P24 [get_ports {w_light[0]}]
+endgroup
+startgroup
+set_property package_pin P23 [get_ports {w_light[1]}]
+endgroup
+save_constraints

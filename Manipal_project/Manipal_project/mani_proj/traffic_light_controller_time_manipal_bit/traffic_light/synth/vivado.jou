@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 16 09:01:44 2024
+# Process ID: 10567
+# Current directory: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth
+# Command line: vivado
+# Log file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/vivado.log
+# Journal file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+set_property part xc7s15csga225-2 [current_project]
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+close_project
+open_project /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/escalator_fsm_4floor_bit/synth/es_tb/es_tb.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+set_property part xc7s75fgga484-2 [current_project]
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+close_project
+open_project /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+close_design
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1

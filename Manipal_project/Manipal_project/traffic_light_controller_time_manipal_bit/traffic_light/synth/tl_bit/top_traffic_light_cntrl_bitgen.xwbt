@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.ncd
+OUTFILE=/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit/top_traffic_light_cntrl.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=/home/ise/Manipal_project/traffic_light_controller_time_manipal_bit/traffic_light/synth/tl_bit
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

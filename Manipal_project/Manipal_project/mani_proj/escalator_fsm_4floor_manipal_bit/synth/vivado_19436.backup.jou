@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Jul 15 18:45:41 2024
+# Process ID: 19436
+# Current directory: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth
+# Command line: vivado
+# Log file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth/vivado.log
+# Journal file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth/es_tb/es_tb.xpr
+update_compile_order -fileset sources_1
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+set_property part xc7k325tffg900-2 [current_project]
+launch_simulation
+source tb_elev.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1

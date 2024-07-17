@@ -1,0 +1,10 @@
+NET "clk" LOC = ;
+NET "rst" LOC = ;
+NET "req_floor[]" LOC = ;
+NET "req_floor[]" LOC = ;
+NET "req_floor[]" LOC = ;
+NET "req_floor[]" LOC = ;
+NET "rec_floor[]" LOC = ;
+NET "rec_floor[]" LOC = ;
+NET "rec_floor[]" LOC = ;
+NET "rec_floor[]" LOC = ;

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_traffic_light_cntrl_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_traffic_light_cntrl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000001fs"></ZoomEndTime>
+      <Cursor1Time time="268608fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="227"></NameColumnWidth>
+      <ValueColumnWidth column_width="106"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wvobject type="group" fp_name="group121">
+      <obj_property name="label">tb_traffic_light</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_traffic_light_cntrl/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_traffic_light_cntrl/reset_n">
+         <obj_property name="ElementShortName">reset_n</obj_property>
+         <obj_property name="ObjectShortName">reset_n</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/n_light">
+         <obj_property name="ElementShortName">n_light[1:0]</obj_property>
+         <obj_property name="ObjectShortName">n_light[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/e_light">
+         <obj_property name="ElementShortName">e_light[1:0]</obj_property>
+         <obj_property name="ObjectShortName">e_light[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/s_light">
+         <obj_property name="ElementShortName">s_light[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_light[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/w_light">
+         <obj_property name="ElementShortName">w_light[1:0]</obj_property>
+         <obj_property name="ObjectShortName">w_light[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/CLK_PERIOD">
+         <obj_property name="ElementShortName">CLK_PERIOD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CLK_PERIOD[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group137">
+      <obj_property name="label">traffic_light_cntrl</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/reset_n">
+         <obj_property name="ElementShortName">reset_n</obj_property>
+         <obj_property name="ObjectShortName">reset_n</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/one_sec_timer">
+         <obj_property name="ElementShortName">one_sec_timer</obj_property>
+         <obj_property name="ObjectShortName">one_sec_timer</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/five_sec_timer">
+         <obj_property name="ElementShortName">five_sec_timer</obj_property>
+         <obj_property name="ObjectShortName">five_sec_timer</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/rst_count">
+         <obj_property name="ElementShortName">rst_count</obj_property>
+         <obj_property name="ObjectShortName">rst_count</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/n_light">
+         <obj_property name="ElementShortName">n_light[1:0]</obj_property>
+         <obj_property name="ObjectShortName">n_light[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/e_light">
+         <obj_property name="ElementShortName">e_light[1:0]</obj_property>
+         <obj_property name="ObjectShortName">e_light[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/s_light">
+         <obj_property name="ElementShortName">s_light[1:0]</obj_property>
+         <obj_property name="ObjectShortName">s_light[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/w_light">
+         <obj_property name="ElementShortName">w_light[1:0]</obj_property>
+         <obj_property name="ObjectShortName">w_light[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/state">
+         <obj_property name="ElementShortName">state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/next_state">
+         <obj_property name="ElementShortName">next_state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/RED">
+         <obj_property name="ElementShortName">RED[1:0]</obj_property>
+         <obj_property name="ObjectShortName">RED[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/YELLOW">
+         <obj_property name="ElementShortName">YELLOW[1:0]</obj_property>
+         <obj_property name="ObjectShortName">YELLOW[1:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/traffic_light_cntrl_inst/GREEN">
+         <obj_property name="ElementShortName">GREEN[1:0]</obj_property>
+         <obj_property name="ObjectShortName">GREEN[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group147">
+      <obj_property name="label">sec_timer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/sec_timer_inst/clk">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/sec_timer_inst/reset_n">
+         <obj_property name="ElementShortName">reset_n</obj_property>
+         <obj_property name="ObjectShortName">reset_n</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/sec_timer_inst/rst_count">
+         <obj_property name="ElementShortName">rst_count</obj_property>
+         <obj_property name="ObjectShortName">rst_count</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/sec_timer_inst/one_sec_timer">
+         <obj_property name="ElementShortName">one_sec_timer</obj_property>
+         <obj_property name="ObjectShortName">one_sec_timer</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/sec_timer_inst/five_sec_timer">
+         <obj_property name="ElementShortName">five_sec_timer</obj_property>
+         <obj_property name="ObjectShortName">five_sec_timer</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/sec_timer_inst/count">
+         <obj_property name="ElementShortName">count[25:0]</obj_property>
+         <obj_property name="ObjectShortName">count[25:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/sec_timer_inst/sec_count">
+         <obj_property name="ElementShortName">sec_count[5:0]</obj_property>
+         <obj_property name="ObjectShortName">sec_count[5:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/sec_timer_inst/FREQ">
+         <obj_property name="ElementShortName">FREQ[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FREQ[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_traffic_light_cntrl/top_traffic_light_cntrl_inst/sec_timer_inst/DELAY_IN_SEC">
+         <obj_property name="ElementShortName">DELAY_IN_SEC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DELAY_IN_SEC[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

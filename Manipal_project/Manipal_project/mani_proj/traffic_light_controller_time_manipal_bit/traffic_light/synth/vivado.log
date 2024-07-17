@@ -1,0 +1,263 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 16 09:01:44 2024
+# Process ID: 10567
+# Current directory: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth
+# Command line: vivado
+# Log file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/vivado.log
+# Journal file: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.xpr
+INFO: [Project 1-313] Project file moved from '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory '/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.gen/sources_1', nor could it be found using path '/home/sinoradaniels/pulpino/git/traffic_light/synth/project_1/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools1/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 7403.688 ; gain = 51.289 ; free physical = 6610 ; free virtual = 13788
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Tue Jul 16 09:03:15 2024] Launched synth_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/synth_1/runme.log
+[Tue Jul 16 09:03:15 2024] Launched impl_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/impl_1/runme.log
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+copy_run -name synth_1_copy_1 [get_runs synth_1] 
+synth_1_copy_1
+set_property part xc7s15csga225-2 [current_project]
+INFO: [Project 1-154] The current project board 'avnet.com:ultra96v2:part0:1.1' is reset to empty (None). Use 'Project Settings' part selector (GUI) or issue set_property Tcl Command to set the board again.
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Tue Jul 16 09:07:52 2024] Launched synth_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/synth_1/runme.log
+[Tue Jul 16 09:07:52 2024] Launched impl_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Tue Jul 16 09:15:08 2024] Launched synth_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/synth_1/runme.log
+[Tue Jul 16 09:15:08 2024] Launched impl_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Tue Jul 16 09:22:25 2024] Launched synth_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/synth_1/runme.log
+[Tue Jul 16 09:22:25 2024] Launched impl_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Tue Jul 16 09:26:47 2024] Launched synth_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/synth_1/runme.log
+[Tue Jul 16 09:26:47 2024] Launched impl_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Tue Jul 16 09:32:33 2024] Launched synth_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/synth_1/runme.log
+[Tue Jul 16 09:32:33 2024] Launched impl_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7s15csga225-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7552.766 ; gain = 0.000 ; free physical = 6133 ; free virtual = 13419
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7552.766 ; gain = 0.000 ; free physical = 6053 ; free virtual = 13339
+Restored from archive | CPU: 0.020000 secs | Memory: 0.150551 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7552.766 ; gain = 0.000 ; free physical = 6053 ; free virtual = 13339
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7619.848 ; gain = 0.000 ; free physical = 5827 ; free virtual = 13113
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 7751.309 ; gain = 198.547 ; free physical = 5799 ; free virtual = 13085
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_project
+open_project /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/escalator_fsm_4floor_bit/synth/es_tb/es_tb.xpr
+INFO: [Project 1-313] Project file moved from '/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth/es_tb' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory '/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/escalator_fsm_4floor_bit/synth/es_tb/es_tb.gen/sources_1', nor could it be found using path '/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/escalator_fsm_4floor/synth/es_tb/es_tb.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools1/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Tue Jul 16 10:08:06 2024] Launched synth_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/escalator_fsm_4floor_bit/synth/es_tb/es_tb.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Tue Jul 16 10:08:36 2024] Launched synth_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/escalator_fsm_4floor_bit/synth/es_tb/es_tb.runs/synth_1/runme.log
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_7ev_cc_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_cc_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_iocc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_iocc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_pciecc:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_pciecc_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_eg_som:part0:1.0 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_3eg_som_es1/1.0/board.xml as part xczu3eg-sfva625-1-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part em.avnet.com:ultrazed_ev_som_es2:part0:1.1 available at /tools1/Xilinx/Vivado/2020.2/data/boards/board_files/ultrazed_7ev_som_es2/1.1/board.xml as part xczu7ev-fbvb900-1-i-es2 specified in board_part file is either invalid or not available
+set_property part xc7s75fgga484-2 [current_project]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/escalator_fsm_4floor_bit/rtl/esc_4_floor.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/escalator_fsm_4floor_bit/tb/esc_tb.v:]
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Tue Jul 16 10:09:47 2024] Launched synth_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/escalator_fsm_4floor_bit/synth/es_tb/es_tb.runs/synth_1/runme.log
+[Tue Jul 16 10:09:48 2024] Launched impl_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/escalator_fsm_4floor_bit/synth/es_tb/es_tb.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7s75fgga484-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7770.617 ; gain = 0.000 ; free physical = 6071 ; free virtual = 13357
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7770.617 ; gain = 0.000 ; free physical = 5990 ; free virtual = 13276
+Restored from archive | CPU: 0.020000 secs | Memory: 0.061974 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7770.617 ; gain = 0.000 ; free physical = 5990 ; free virtual = 13276
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7770.617 ; gain = 0.000 ; free physical = 5747 ; free virtual = 13034
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 7784.730 ; gain = 14.113 ; free physical = 5695 ; free virtual = 12982
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_project
+open_project /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools1/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Tue Jul 16 10:33:45 2024] Launched synth_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/synth_1/runme.log
+[Tue Jul 16 10:33:46 2024] Launched impl_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7s15csga225-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7804.898 ; gain = 0.000 ; free physical = 6040 ; free virtual = 13327
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7804.898 ; gain = 0.000 ; free physical = 5963 ; free virtual = 13249
+Restored from archive | CPU: 0.020000 secs | Memory: 0.146065 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7804.898 ; gain = 0.000 ; free physical = 5963 ; free virtual = 13249
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7804.898 ; gain = 0.000 ; free physical = 5741 ; free virtual = 13028
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 7877.938 ; gain = 78.027 ; free physical = 5718 ; free virtual = 13005
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run synth_1
+close_design
+launch_runs impl_1 -jobs 2
+[Tue Jul 16 11:01:55 2024] Launched synth_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/synth_1/runme.log
+[Tue Jul 16 11:01:55 2024] Launched impl_1...
+Run output will be captured here: /home/pradeepjairam/ramanujamIP/other_rnd/fpga_demo_escalator/traffic_escalator_bit/traffic_light_controller_time_bit/traffic_light/synth/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7877.938 ; gain = 0.000 ; free physical = 5599 ; free virtual = 12886
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7877.938 ; gain = 0.000 ; free physical = 5542 ; free virtual = 12830
+Restored from archive | CPU: 0.020000 secs | Memory: 0.130379 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7877.938 ; gain = 0.000 ; free physical = 5542 ; free virtual = 12830
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7877.938 ; gain = 0.000 ; free physical = 5542 ; free virtual = 12830
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.

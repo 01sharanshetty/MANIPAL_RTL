@@ -1,0 +1,10 @@
+NET "clk" LOC = W17;
+NET "rst" LOC = AA13;
+NET "req_floor[0]" LOC = Ab11;
+NET "req_floor[1]" LOC = Y11;
+NET "req_floor[2]" LOC = W11;
+NET "req_floor[3]" LOC = AB13;
+NET "rec_floor[0]" LOC = AA11;
+NET "rec_floor[1]" LOC = Y13;
+NET "rec_floor[2]" LOC = Y12;
+NET "rec_floor[3]" LOC = AB12;
